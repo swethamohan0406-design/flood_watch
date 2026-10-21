@@ -1,0 +1,25 @@
+{
+  "name": "flood-monitoring-system",
+  "version": "1.0.0",
+  "description": "Flood Monitoring and Emergency Alert System - Real-time monitoring of river levels, rainfall, flood-prone zones, and emergency alerts.",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "seed": "node server/seed.js",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": [
+    "flood-monitoring",
+    "emergency-alert",
+    "express",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
