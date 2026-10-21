@@ -151,3 +151,4 @@ Alternatively, run each service independently:
 | `/api/alerts` | GET | Authenticated | List all alerts (history & active) |
 | `/api/alerts/active` | GET | Authenticated | List only active alerts |
 | `/api/alerts/:id/resolve` | PATCH | Admin | Mark active alert as resolved |
+# flood_watch
